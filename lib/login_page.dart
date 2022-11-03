@@ -48,8 +48,7 @@ class _LoginPageState extends State<LoginPage> {
                 onPressed: () {
                   if (email == 'mateus@lecchi.com' && senha == '123') {
                     print('Correto');
-                    Navigator.of(context).pushReplacement(
-                        MaterialPageRoute(builder: (context) => HomePage()));
+                    Navigator.of(context).pushReplacementNamed('/home');
                   } else {
                     print('Incorreto');
                   }
