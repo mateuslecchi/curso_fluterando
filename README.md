@@ -1,5 +1,7 @@
 # curso_fluterando
 
+Curso para flutter disponível em https://www.youtube.com/watch?v=XeUiJJN0vsE&list=PLlBnICoI-g-d-J57QIz6Tx5xtUDGQdBFB&index=1
+
 A new Flutter project.
 
 ## Getting Started
