@@ -22,10 +22,30 @@ class _HomePageState extends State<HomePage> {
         width: double.infinity,
         height: double.infinity,
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Text('Contador: $counter'),
             CustomSwitch(),
+            Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.pink,
+                  ),
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.blue,
+                  ),
+                  Container(
+                    width: 50,
+                    height: 50,
+                    color: Colors.yellow,
+                  ),
+                ]),
           ],
         ),
       ),
