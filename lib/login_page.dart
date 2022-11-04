@@ -26,8 +26,7 @@ class _LoginPageState extends State<LoginPage> {
             Container(
               width: 200,
               height: 200,
-              child: Image.network(
-                  'https://logosmarcas.net/wp-content/uploads/2020/04/Twitter-Logo-650x366.png'),
+              child: Image.asset('assets/images/logo_flutter.png'),
             ),
             TextField(
               onChanged: (text) {
