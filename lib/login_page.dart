@@ -23,6 +23,12 @@ class _LoginPageState extends State<LoginPage> {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+            Container(
+              width: 200,
+              height: 200,
+              child: Image.network(
+                  'https://logosmarcas.net/wp-content/uploads/2020/04/Twitter-Logo-650x366.png'),
+            ),
             TextField(
               onChanged: (text) {
                 email = text;
