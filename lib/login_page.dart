@@ -36,37 +36,42 @@ class _LoginPageState extends State<LoginPage> {
                 height: 200,
                 child: Image.asset('assets/images/logo_flutter.png'),
               ),
-              TextField(
-                onChanged: (text) {
-                  email = text;
-                },
-                keyboardType: TextInputType.emailAddress,
-                decoration: InputDecoration(
-                  labelText: 'Email',
-                  border: OutlineInputBorder(),
+              Card(
+                child: TextField(
+                  onChanged: (text) {
+                    email = text;
+                  },
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    labelText: 'Email',
+                    border: OutlineInputBorder(),
+                  ),
                 ),
               ),
               SizedBox(height: 10),
-              TextField(
-                onChanged: (text) {
-                  senha = text;
-                },
-                obscureText: true,
-                decoration: InputDecoration(
-                  labelText: 'Password',
-                  border: OutlineInputBorder(),
+              Card(
+                child: TextField(
+                  onChanged: (text) {
+                    senha = text;
+                  },
+                  obscureText: true,
+                  decoration: InputDecoration(
+                    labelText: 'Password',
+                    border: OutlineInputBorder(),
+                  ),
                 ),
               ),
               ElevatedButton(
-                  onPressed: () {
-                    if (email == 'mateus@lecchi.com' && senha == '123') {
-                      print('Correto');
-                      Navigator.of(context).pushReplacementNamed('/home');
-                    } else {
-                      print('Incorreto');
-                    }
-                  },
-                  child: Text('Entrar'))
+                onPressed: () {
+                  if (email == 'mateus@lecchi.com' && senha == '123') {
+                    print('Correto');
+                    Navigator.of(context).pushReplacementNamed('/home');
+                  } else {
+                    print('Incorreto');
+                  }
+                },
+                child: Text('Entrar'),
+              )
             ]),
           ),
         ),
