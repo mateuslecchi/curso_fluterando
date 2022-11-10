@@ -14,6 +14,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext build) {
     return Scaffold(
+      drawer: Drawer(),
       appBar: AppBar(
         title: Text('Home Page'),
         actions: [CustomSwitch()],
