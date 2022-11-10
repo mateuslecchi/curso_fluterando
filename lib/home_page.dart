@@ -18,8 +18,9 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             UserAccountsDrawerHeader(
-              currentAccountPicture:
-                  Image.asset('assets/images/logo_flutter.png'),
+              currentAccountPicture: ClipOval(
+                child: Image.asset('assets/images/logo_flutter_white.png'),
+              ),
               accountName: Text('Mateus Lecchi'),
               accountEmail: Text('mateus@lecchi.com'),
             ),
