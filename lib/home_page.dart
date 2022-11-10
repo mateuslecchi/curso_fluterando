@@ -14,7 +14,34 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext build) {
     return Scaffold(
-      drawer: Drawer(),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            UserAccountsDrawerHeader(
+              currentAccountPicture:
+                  Image.asset('assets/images/logo_flutter.png'),
+              accountName: Text('Mateus Lecchi'),
+              accountEmail: Text('mateus@lecchi.com'),
+            ),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text('Início'),
+              subtitle: Text('Tela de Início'),
+              onTap: () {
+                print('home');
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.home),
+              title: Text('Logout'),
+              subtitle: Text('Finalizar Sessão'),
+              onTap: () {
+                Navigator.of(context).pushReplacementNamed('/');
+              },
+            )
+          ],
+        ),
+      ),
       appBar: AppBar(
         title: Text('Home Page'),
         actions: [CustomSwitch()],
